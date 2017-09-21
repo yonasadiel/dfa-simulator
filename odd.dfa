@@ -1,0 +1,15 @@
+# Accept alphabet {1,0}
+# and accept string that it's representation in binary is odd number
+
+3
+empty  # the string is empty
+odd    # the interpretation of string is odd
+even   # the interpretation of string is even
+2
+1
+0
+1 2
+1 2
+0
+1
+
