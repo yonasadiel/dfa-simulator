@@ -4,16 +4,18 @@
 
 1. Run the program with dfa as parameter.
 
+    ```
     ./dfa-simulator graph.dfa
+    ```
 
 2. Input transition every line.
 3. Every input will be followed by the name of current state.
-4. Input will be terminated with EOF(Ctrl+Z in Command Line) and returning whether the string is ACCEPTED OR DECLINED
+4. Input will be terminated with EOF(Ctrl+Z in Command Line) and returning whether the string is `ACCEPTED` OR `DECLINED`
 
 
 ## Generating DFA
 
-All of characters after '''#''' in the same line are ignored.
+All of characters after `#` in the same line are ignored.
 
 First line contains an integer N<sub>Q</sub>, number of states.
 
