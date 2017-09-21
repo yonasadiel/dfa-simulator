@@ -18,7 +18,7 @@ All of characters after '''#''' in the same line are ignored.
 First line contains an integer N<sub>Q</sub>, number of states.
 
 Next N<sub>Q</sub> lines contain Q, the name of states.
-It is recomended to give description for every states with '''#''' comment.
+It is recomended to give description for every states with `#` comment.
 q<sub>i</sub> is in the ith line with 0 &le; i &lt; N<sub>Q</sub>.
 
 Next line contains an integer N<sub>A</sub>,
