@@ -4,7 +4,7 @@
 
 1. Run the program with dfa as parameter.
 
-  ./dfa-simulator graph.dfa
+    ./dfa-simulator graph.dfa
 
 2. Input transition every line.
 3. Every input will be followed by the name of current state.
@@ -19,12 +19,12 @@ First line contains an integer N<sub>Q</sub>, number of states.
 
 Next N<sub>Q</sub> lines contain Q, the name of states.
 It is recomended to give description for every states with '''#''' comment.
-q<sub>i is in the ith line with 0 &le; i &lt; N<sub>Q</sub>.
+q<sub>i</sub> is in the ith line with 0 &le; i &lt; N<sub>Q</sub>.
 
 Next line contains an integer N<sub>A</sub>,
 
 Next N<sub>A</sub> lines contain A, the transition function (alphabet).
-A<sub>i is in the i-th line with 0 &le; i &lt; N<sub>A</sub>.
+A<sub>i</sub> is in the i-th line with 0 &le; i &lt; N<sub>A</sub>.
 
 Next N<sub>Q</sub> lines contain N<sub>A</sub> of states.
 Denote the state in i-th row and j-th column (zero-based) as T<sub>i,j</sub>,
@@ -33,10 +33,10 @@ A's in same line are separated by single whitespace.
 
 The next line contains an index of start state.
 The start state must be in the Q.
-Say the start state is q<sub>0, t
+Say the start state is q<sub>0</sub>, then 0 is written.
 
 The next line contains N<sub>F</sub>, number of final states.
 Next line contains N<sub>F</sub> of indices that correspond to the list of states.
-Then, if q<sub>i</sub> is final state, i is written.
+Say if q<sub>i</sub> is final state, i is written.
 
 Example is in this folder, odd.dfa
