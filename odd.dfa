@@ -1,15 +1,26 @@
 # Accept alphabet {1,0}
 # and accept string that it's representation in binary is odd number
 
+# STATES
 3
-empty  # the string is empty
-odd    # the interpretation of string is odd
-even   # the interpretation of string is even
+empty  # 0 the string is empty
+odd    # 1 the interpretation of string is odd
+even   # 2 the interpretation of string is even
+
+# TRANSITIONS
 2
+1      # add 1 to last character
+0      # add 0 to last character
+
+# TRANSITION TABLE
+1 2    # empty
+1 2    # odd
+1 2    # even
+
+# START STATE
+0      # empty
+
+# FINAL STATES
 1
-0
-1 2
-1 2
-0
-1
+1      # odd
 
