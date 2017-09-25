@@ -30,7 +30,7 @@ A<sub>i</sub> is in the i-th line with 0 &le; i &lt; N<sub>A</sub>.
 
 Next N<sub>Q</sub> lines contain N<sub>A</sub> of states.
 Denote the state in i-th row and j-th column (zero-based) as T<sub>i,j</sub>,
-The state q<sub>i</sub> can go to T<sub>i,j</sub> with A<j> transition.
+the state q<sub>i</sub> can go to T<sub>i,j</sub> with A<sub>j</sub> transition.
 A's in same line are separated by single whitespace.
 
 The next line contains an index of start state.
