@@ -1,0 +1,48 @@
+# Simulation for Socket Programming
+
+# STATES
+8
+start      # 0 start state
+idle       # 1 socket started
+bond       # 2 socket already bind to an ip address
+listening  # 3 socket is listening for connection
+connected  # 4 socket is connected to other socket
+wrote      # 5 last action of socket is writing
+waiting    # 6 waiting for response
+invalid    # 7 error on transition
+
+# TRANSITIONS
+10
+socket     # start the socket
+bind       # binding into ip address
+listen     # listen for connection
+accept     # accepting a connection
+connect    # connect to other socket
+read       # read from other socket
+write      # write to other socket
+wait       # waiting for response after writing
+abort      # abort waiting
+close      # close the socket program
+
+# TRANSITION TABLE
+1 7 7 7 7 7 7 7 7 0   # start
+7 2 7 7 4 7 7 7 7 0   # idle
+7 7 3 7 7 7 7 7 7 0   # bond
+7 7 7 4 7 7 7 7 7 0   # listening
+7 7 7 7 7 4 5 7 7 0   # connected
+7 7 7 7 7 4 7 6 7 0   # wrote
+7 7 7 7 7 4 7 7 4 0   # waiting
+7 7 7 7 7 7 7 7 7 7   # invalid
+
+# START STATE
+0   # start
+
+# FINAL STATES
+6
+0   # start
+1   # idle
+2   # bond
+3   # listening
+4   # connected
+5   # wrote
+
