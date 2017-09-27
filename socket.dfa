@@ -25,12 +25,12 @@ abort      # abort waiting
 close      # close the socket program
 
 # TRANSITION TABLE
-1 7 7 7 7 7 7 7 7 0   # start
+1 7 7 7 7 7 7 7 7 7   # start
 7 2 7 7 4 7 7 7 7 0   # idle
 7 7 3 7 7 7 7 7 7 0   # bond
 7 7 7 4 7 7 7 7 7 0   # listening
 7 7 7 7 7 4 5 7 7 0   # connected
-7 7 7 7 7 4 7 6 7 0   # wrote
+7 7 7 7 7 4 5 6 7 0   # wrote
 7 7 7 7 7 4 7 7 4 0   # waiting
 7 7 7 7 7 7 7 7 7 7   # invalid
 
